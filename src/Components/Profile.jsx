@@ -160,7 +160,7 @@ function Profile() {
                       >
                         <ScaleIcon />
                       </Box>
-                      70kg
+                      58kg
                     </li>
                     <li>
                       <Box
