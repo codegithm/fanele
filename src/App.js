@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { useContext } from "react";
+import { Box, Stack } from "@mui/material";
+import Landing from "./Components/Landing";
+import Nav from "./Components/Nav";
+import Profile from "./Components/Profile";
+import { AppContext } from "./AppContext";
+import Footer from "./Components/Footer";
 function App() {
+  const { profileShow } = useContext(AppContext);
+  const [showProfile, setShowProfile] = profileShow;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Stack sx={{ maxWidth: "100vw" }} className='App'>
+      <Nav />
+      <Landing />
+      <Profile />
+      <Footer />
+    </Stack>
   );
 }
 
