@@ -33,7 +33,7 @@ function Landing() {
         height: "100vh",
         maxHeight: "100vh",
         background:
-          "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./back.jpg')",
+          "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./back2.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
